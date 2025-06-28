@@ -1,5 +1,5 @@
 
-# Projeto de gerenciamento de Maquinas Virtuais no Azure
+## Projeto de gerenciamento de Maquinas Virtuais no Azure
 
 <a id="sumario"></a>
 
@@ -10,7 +10,7 @@
     - [Deploy storage account](#sub-topico-04)
     - [Deploy virtual machine](#sub-topico-05)
 
-# Topico 01 <a id="topico_01"></a>
+## Escopo do projeto<a id="topico_01"></a>
 
 ## Azure Resource Manager <a id="sub-topico-01"></a>
 ## Azure Resource Group<a id="sub-topico-02"></a>
