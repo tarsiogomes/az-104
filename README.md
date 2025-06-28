@@ -17,9 +17,13 @@
 
 > Link para adicionar [Azure Resource Manager](https://portal.azure.com/#view/Microsoft_Azure_Resources/ResourceManagerBlade/~/overview)
 
+![](https://github.com/tarsiogomes/az-104/blob/main/images/azure-resource-manager.png)
+
 ### Azure Resource Group<a id="sub-topico-02"></a>
 
 > Link para adicionar [Resource Group](https://portal.azure.com/#browse/resourcegroups)
+
+![](https://github.com/tarsiogomes/az-104/blob/main/images/resource-group.png)
 
 ### Deploy vnet<a id="sub-topico-03"></a>
 
