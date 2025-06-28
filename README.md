@@ -12,10 +12,10 @@
 
 ## Escopo do projeto<a id="topico_01"></a>
 
-## Azure Resource Manager <a id="sub-topico-01"></a>
-## Azure Resource Group<a id="sub-topico-02"></a>
-## Deploy vnet<a id="sub-topico-03"></a>
-## Deploy storage account<a id="sub-topico-04"></a>
-## Deploy virtual machine<a id="sub-topico-05"></a>
+### Azure Resource Manager <a id="sub-topico-01"></a>
+### Azure Resource Group<a id="sub-topico-02"></a>
+### Deploy vnet<a id="sub-topico-03"></a>
+### Deploy storage account<a id="sub-topico-04"></a>
+### Deploy virtual machine<a id="sub-topico-05"></a>
 
 [Voltar ⬆️](#sumario)
