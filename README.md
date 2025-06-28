@@ -12,7 +12,7 @@
 
 ## Escopo do projeto<a id="topico_01"></a>
 
-![]
+![Escopo do Projeto](https://raw.githubusercontent.com/tarsiogomes/az-104/main/images/escopo-projeto.png "Diagrama de Escopo do Projeto")
 
 ### Azure Resource Manager <a id="sub-topico-01"></a>
 
