@@ -14,12 +14,19 @@
 
 ![Escopo do Projeto](https://raw.githubusercontent.com/tarsiogomes/az-104/main/images/escopo-projeto.png "Diagrama de Escopo do Projeto")
 
-### Azure Resource Manager <a id="sub-topico-01"></a>
+### Azure Resource Manager: <a id="sub-topico-01"></a>
 
-> Adicionar [Azure Reource Manager](https://portal.azure.com/#view/Microsoft_Azure_Resources/ResourceManagerBlade/~/overview):
+> Link para adicionar [Azure Resource Manager](https://portal.azure.com/#view/Microsoft_Azure_Resources/ResourceManagerBlade/~/overview)
 
 ### Azure Resource Group<a id="sub-topico-02"></a>
+
+> Link para adicionar [Resource Group](https://portal.azure.com/#browse/resourcegroups)
+
 ### Deploy vnet<a id="sub-topico-03"></a>
+
+> Virtual Network criada e adiciona as subnets:
+
+![VNET]()
 ### Deploy storage account<a id="sub-topico-04"></a>
 ### Deploy virtual machine<a id="sub-topico-05"></a>
 
