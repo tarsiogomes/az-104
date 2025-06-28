@@ -1,21 +1,21 @@
 
-# Gerenciando Maquinas Virtuais no Azure
+# Projeto de gerenciamento de Maquinas Virtuais no Azure
 
 <a id="sumario"></a>
 
-- [Maquinas virtuais](#topico_01)
-    - [Deploy vnet](#sub-topico-01)
-    - [Deploy virtual machine](#sub-topico-02)
-    - [Deploy storage account](#sub-topico-03)
-    - [Azure Resource Manager](#sub-topico-04)
-    - [Desprovisionar recursos](#sub-topico-05)
+- [Escopo do projeto](#topico_01)
+    - [Azure Resource Manager](#sub-topico-01)
+    - [Azure Resource Group](#sub-topico-02)
+    - [Deploy vnet](#sub-topico-03)
+    - [Deploy storage account](#sub-topico-04)
+    - [Deploy virtual machine](#sub-topico-05)
 
 # Topico 01 <a id="topico_01"></a>
 
-## Sub Topico 01 <a id="sub-topico-01"></a>
-## Sub Topico 02 <a id="sub-topico-02"></a>
-## Sub Topico 03 <a id="sub-topico-03"></a>
-## Sub Topico 04 <a id="sub-topico-04"></a>
-## Sub Topico 05 <a id="sub-topico-05"></a>
+## Azure Resource Manager <a id="sub-topico-01"></a>
+## Azure Resource Group<a id="sub-topico-02"></a>
+## Deploy vnet<a id="sub-topico-03"></a>
+## Deploy storage account<a id="sub-topico-04"></a>
+## Deploy virtual machine<a id="sub-topico-05"></a>
 
 [Voltar ⬆️](#sumario)
