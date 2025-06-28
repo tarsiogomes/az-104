@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_sv_linux_01_name": {
+            "defaultValue": "sv-linux-01",
+            "type": "String"
+        },
+        "disks_sv_linux_01_OsDisk_1_20bba10540d24f43939b958680f0e41d_externalid": {
+            "defaultValue": "/subscriptions/c08a3587-14a7-4a46-9850-a1e804418751/resourceGroups/az-104-project-01/providers/Microsoft.Compute/disks/sv-linux-01_OsDisk_1_20bba10540d24f43939b958680f0e41d",
+            "type": "String"
+        },
+        "networkInterfaces_sv_linux_01500_externalid": {
+            "defaultValue": "/subscriptions/c08a3587-14a7-4a46-9850-a1e804418751/resourceGroups/az-104-project-01/providers/Microsoft.Network/networkInterfaces/sv-linux-01500",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2024-11-01",
+            "name": "[parameters('virtualMachines_sv_linux_01_name')]",
+            "location": "brazilsouth",
+            "tags": {
+                "centro-custo": "100"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_D2s_v3"
+                },
+                "additionalCapabilities": {
+                    "hibernationEnabled": false
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "canonical",
+                        "offer": "ubuntu-24_04-lts",
+                        "sku": "server",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "osType": "Linux",
+                        "name": "[concat(parameters('virtualMachines_sv_linux_01_name'), '_OsDisk_1_20bba10540d24f43939b958680f0e41d')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "Standard_LRS",
+                            "id": "[parameters('disks_sv_linux_01_OsDisk_1_20bba10540d24f43939b958680f0e41d_externalid')]"
+                        },
+                        "deleteOption": "Delete",
+                        "diskSizeGB": 30
+                    },
+                    "dataDisks": [],
+                    "diskControllerType": "SCSI"
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_sv_linux_01_name')]",
+                    "adminUsername": "gomes",
+                    "linuxConfiguration": {
+                        "disablePasswordAuthentication": true,
+                        "ssh": {
+                            "publicKeys": [
+                                {
+                                    "path": "/home/gomes/.ssh/authorized_keys",
+                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDObkmKau0MaaSELA/9xYoZljPGKqDt4yaGvhaKLJLOegue0KztYg1ALCd7jEqmruhw2sgNJZR9461RWnkZSZFOHpg7OVS+tPFzrxIPp/H+wMOrQ2EUX2TfQOfD5RtdeGmZS9L2KXszJgLmwTu9Go9fkDk9KuzcL9Wx0aqqQVElj31j5h8bdjq9MaCzlE08mo3jVrt0SRl2WzNlHORZ4QoDYN8VKREpJTneSNs6aHi89e+VKPXYlZ+SwlrYHHGX2Bzr0WV0o97hxV2GLdHe/hJCSHgrJPER05xuE1Xkzn3UVrbhYmA2gBHD9J9FIsRrhzupVYcpZOLghlrk6dRO0KK0PfVNQFaTchIJQUKHnwW9AoBDWD7DBWCwjLUE7YV/5TacilE5zcPTeaKZo/tCk+FEneFQ4NPjUJnLqyC0lVKbycvO8XOaT4FB00rgwjmXxwz26nZZ4JOQaWspj7M6rRe4HwNaoU6UWqmbMfn8FhUhKk2gAIxcc0eQ3cPZgA6cqTU= generated-by-azure"
+                                }
+                            ]
+                        },
+                        "provisionVMAgent": true,
+                        "patchSettings": {
+                            "patchMode": "ImageDefault",
+                            "assessmentMode": "ImageDefault"
+                        }
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_sv_linux_01500_externalid')]",
+                            "properties": {
+                                "deleteOption": "Detach"
+                            }
+                        }
+                    ]
+                },
+                "diagnosticsProfile": {
+                    "bootDiagnostics": {
+                        "enabled": true
+                    }
+                }
+            }
+        }
+    ]
+}

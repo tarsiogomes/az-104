@@ -12,7 +12,12 @@
 
 ## Escopo do projeto<a id="topico_01"></a>
 
+![]
+
 ### Azure Resource Manager <a id="sub-topico-01"></a>
+
+> Adicionar [Azure Reource Manager](https://portal.azure.com/#view/Microsoft_Azure_Resources/ResourceManagerBlade/~/overview):
+
 ### Azure Resource Group<a id="sub-topico-02"></a>
 ### Deploy vnet<a id="sub-topico-03"></a>
 ### Deploy storage account<a id="sub-topico-04"></a>
